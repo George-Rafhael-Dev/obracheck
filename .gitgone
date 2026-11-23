@@ -1,0 +1,26 @@
+# Java
+*.class
+*.jar
+*.war
+
+# Maven
+target/
+
+# Gradle
+build/
+.gradle/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Variáveis de ambiente
+.env
