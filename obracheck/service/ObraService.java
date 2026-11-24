@@ -1,4 +1,3 @@
-
 package com.obracheck.obracheck.service;
 
 import com.obracheck.obracheck.model.Obra;
@@ -48,6 +47,18 @@ public List<Obra> filtrar(
         tipoObra,
         orgao
     );
+}
+
+public Obra atualizar(Long id, Obra dadosAtualizados) {
+
+    Obra obra = buscarPorId(id);
+
+    obra.setNome(dadosAtualizados.getNome());
+    obra.setDescricao(dadosAtualizados.getDescricao());
+    obra.setEndereco(dadosAtualizados.getEndereco());
+    obra.setStatus(dadosAtualizados.getStatus());
+
+    return repository.save(obra);
 }
 
 }

@@ -1,4 +1,3 @@
-
 package com.obracheck.obracheck.controller;
 
 import com.obracheck.obracheck.model.Obra;
@@ -52,6 +51,14 @@ public List<Obra> filtrar(
         tipoObra,
         orgaoResponsavel
     );
+}
+
+@PutMapping("/{id}")
+public Obra atualizar(
+        @PathVariable Long id,
+        @RequestBody Obra obra) {
+
+    return service.atualizar(id, obra);
 }
 
 }
