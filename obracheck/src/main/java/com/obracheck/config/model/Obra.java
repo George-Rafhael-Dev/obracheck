@@ -1,11 +1,13 @@
 
-package com.obracheck.obracheck.model;
+package com.obracheck.config.model;
 
-import jakarta.persistence.*;
 import java.time.LocalDate;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
-@Table(name = "obras")
 public class Obra {
 
     @Id
@@ -13,24 +15,14 @@ public class Obra {
     private Long id;
 
     private String nome;
-
-    @Column(length = 1000)
     private String descricao;
-
     private String endereco;
-
     private String bairro;
-
     private String status;
-
     private String tipoObra;
-
     private Double percentualConclusao;
-
     private LocalDate dataInicio;
-
     private LocalDate previsaoConclusao;
-
     private String orgaoResponsavel;
 
     // Construtor vazio
@@ -56,8 +48,6 @@ public class Obra {
         this.previsaoConclusao = previsaoConclusao;
         this.orgaoResponsavel = orgaoResponsavel;
     }
-
-    // Getters e Setters
 
     public Long getId() {
         return id;

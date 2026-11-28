@@ -1,7 +1,7 @@
-package com.obracheck.obracheck.service;
+package com.obracheck.service;
 
-import com.obracheck.obracheck.model.Obra;
-import com.obracheck.obracheck.repository.ObraRepository;
+import com.obracheck.config.model.Obra;
+import com.obracheck.repository.ObraRepository;
 
 import org.springframework.stereotype.Service;
 import java.util.List;

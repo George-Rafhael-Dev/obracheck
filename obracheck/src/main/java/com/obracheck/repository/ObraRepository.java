@@ -1,6 +1,6 @@
-package com.obracheck.obracheck.repository;
+package com.obracheck.repository;
 
-import com.obracheck.obracheck.model.Obra;
+import com.obracheck.config.model.Obra;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

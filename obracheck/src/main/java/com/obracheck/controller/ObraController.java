@@ -1,7 +1,7 @@
-package com.obracheck.obracheck.controller;
+package com.obracheck.controller;
 
-import com.obracheck.obracheck.model.Obra;
-import com.obracheck.obracheck.service.ObraService;
+import com.obracheck.config.model.Obra;
+import com.obracheck.service.ObraService;
 
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
